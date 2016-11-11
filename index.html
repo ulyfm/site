@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- DELETE_IN_PROD using colors from http://www.colourlovers.com/palette/1908142/Airmail_Arrival -->
 <html>
 <head>
 	<title>Ulysite</title>
@@ -7,18 +6,21 @@
 	<link href='doc.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h1>Ulysses Foote-McNabb</h1>
-    <h2>About</h2>
-	<p>Hello I come from Africa I am 12 years old and I am come from Somalia. My family they were killed in Mogadishu in the civil war
-	but the UNICEF took me to America I love FC Barcelona and Messi Thanks you for your read this.</p>
-	<h2>Contact</h2>
+	<h1 class='title'>Ulysses Foote-McNabb</h1>
+	<h2 class='title'>Contact</h2>
 	<ul>
 		<li>Email: ulyssesfm@gmail.com</li>
 	</ul>
-	<h2>Projects</h2>
-	<h2>Essays</h2>
+	<h2 class='title'>About</h2>
+	<p>Hello I come from Africa I am 12 years old and I am come from Somalia. My family they were killed in Mogadishu in the civil war
+	but the UNICEF took me to America I love FC Barcelona and Messi Thanks you for your read this.</p>
+	<h2 class='title'>Projects</h2>
+    <ul>
+    	<% projectlinks %>
+    </ul>
+	<h2 class='title'>Essays</h2>
 	<ul>
-		<li><a href="blog1_russian_formalism.html">Russian Formalism Is Not Dead (June 24, 2016)</a></li>
+		<% essaylinks %>
 	</ul>
 </body>
 </html>
