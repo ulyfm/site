@@ -12,3 +12,12 @@ open $fh, '<', "templates/project.html" or die "project template doesn't exist."
 my $project = do {local $/; <$fh>};
 
 open $fh, '<', "templates/essay.html" or die "essay template doesn't exist.";
+my $essay = do {local $/; <$fh>}
+
+unlink glob "'../essays/*.*'";
+unlink glob "'../projects/*.*'";
+
+my @files = <../essays/*>;
+foreach $file (@files) {
+	print FILE $essay =~ s/<//r;
+}
